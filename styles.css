@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,400&family=Satisfy&display=swap");
+
+:root {
+  --primary-color: #316a41;
+  --primary-container-color: #b4f1be;
+  --on-primary-container-color: #00210c;
+  --secondary-color: #506352;
+  --on-primary-and-secondary-color: #ffffff;
+  --secondary-container-color: #d3e8d3;
+  --on-secondary-container-color: #0e1f12;
+
+  --surface-color: #f6fbf3;
+  --on-surface-color: #181d18;
+  --surface-container-color: #ebefe7;
+}
+
+/* Typography */
+
+.display-text {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-size: 57pt;
+  line-height: 64pt;
+  letter-spacing: -0.25pt;
+}
+
+.headline-large {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-size: 32pt;
+  line-height: 40pt;
+  letter-spacing: 0;
+}
+
+.headline-small {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-size: 24pt;
+  line-height: 32pt;
+  letter-spacing: 0;
+}
+
+.body-text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 16pt;
+  letter-spacing: 0.4pt;
+}
+
+.label-large {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 14pt;
+  line-height: 20pt;
+  letter-spacing: 0.1pt;
+}
+
+.label-small {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 11pt;
+  line-height: 16pt;
+  letter-spacing: 0.5pt;
+}
