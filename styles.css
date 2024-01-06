@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2? family= Mulish:ital,wght@0,400;0,500;1,400 & family= Satisfy & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,400&family=Satisfy&display=swap");
 
 :root {
   --primary-color: #316a41;
@@ -13,6 +13,8 @@
   --on-surface-color: #181d18;
   --surface-container-color: #ebefe7;
 }
+
+/* Typography */
 
 .display-text {
   font-family: "Satisfy", cursive;
