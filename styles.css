@@ -63,3 +63,8 @@
   line-height: 16pt;
   letter-spacing: 0.5pt;
 }
+
+.container-center {
+  max-width: 450px;
+  margin: 0 auto;
+}
