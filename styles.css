@@ -64,6 +64,8 @@
   letter-spacing: 0.5pt;
 }
 
+/* Containers */
+
 .container-center {
   max-width: 450px;
   margin: 0 auto;
