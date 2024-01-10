@@ -125,6 +125,6 @@ body {
   list-style: none;
 }
 
-.list-inline li {
+.list-inline-item {
   display: inline;
 }
