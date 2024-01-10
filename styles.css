@@ -93,8 +93,23 @@ body {
 
 .link--primary__state-layer {
   padding: 10px 20px;
+  border-radius: inherit;
 }
 
 .link--primary:hover .link--primary__state-layer {
   background-color: rgba(255, 255, 255, 0.08);
+}
+
+.link--secondary {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.link--secondary__state-layer {
+  padding: 9px 18px;
+  border-radius: inherit;
+}
+
+.link--secondary:hover .link--secondary__state-layer {
+  background-color: var(--secondary-container-color);
 }
