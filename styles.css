@@ -118,3 +118,13 @@ body {
 .link--secondary:hover .link--secondary__state-layer {
   background-color: var(--secondary-container-color);
 }
+
+/* Lists */
+
+.list-non-bulleted {
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline;
+}
