@@ -20,6 +20,14 @@ body {
   margin: 0;
 }
 
+/* Global Styles */
+
+body {
+  background-color: var(--surface-color);
+  color: var(--on-surface-color);
+  font-family: "Mulish", sans-serif;
+}
+
 /* Typography */
 
 .display-text {
@@ -47,7 +55,6 @@ body {
 }
 
 .body-text {
-  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 12pt;
   line-height: 16pt;
@@ -55,7 +62,6 @@ body {
 }
 
 .label-large {
-  font-family: "Mulish", sans-serif;
   font-weight: 500;
   font-size: 14pt;
   line-height: 20pt;
@@ -63,7 +69,6 @@ body {
 }
 
 .label-small {
-  font-family: "Mulish", sans-serif;
   font-weight: 500;
   font-size: 11pt;
   line-height: 16pt;
