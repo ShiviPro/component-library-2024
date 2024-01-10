@@ -15,7 +15,8 @@
   --surface-container-color: #ebefe7;
 }
 
-html, body {
+html,
+body {
   margin: 0;
 }
 
@@ -80,7 +81,6 @@ html, body {
 
 .link {
   text-decoration: none;
-  padding: 10px 20px;
   display: inline-block;
   margin: 20px;
   border-radius: 25px;
@@ -89,4 +89,12 @@ html, body {
 .link--primary {
   background-color: var(--primary-color);
   color: var(--on-primary-color);
+}
+
+.link--primary__state-layer {
+  padding: 10px 20px;
+}
+
+.link--primary:hover .link--primary__state-layer {
+  background-color: rgba(255, 255, 255, 0.08);
 }
