@@ -2,16 +2,22 @@
 
 :root {
   --primary-color: #316a41;
+  --on-primary-color: #ffffff;
   --primary-container-color: #b4f1be;
   --on-primary-container-color: #00210c;
   --secondary-color: #506352;
-  --on-primary-and-secondary-color: #ffffff;
+  --on-secondary-color: #ffffff;
   --secondary-container-color: #d3e8d3;
   --on-secondary-container-color: #0e1f12;
 
   --surface-color: #f6fbf3;
   --on-surface-color: #181d18;
   --surface-container-color: #ebefe7;
+}
+
+html,
+body {
+  margin: 0;
 }
 
 /* Typography */
@@ -69,4 +75,41 @@
 .container-center {
   max-width: 450px;
   margin: 0 auto;
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 25px;
+}
+
+.link--primary {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+}
+
+.link--primary__state-layer {
+  padding: 10px 20px;
+  border-radius: inherit;
+}
+
+.link--primary:hover .link--primary__state-layer {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.link--secondary {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.link--secondary__state-layer {
+  padding: 9px 18px;
+  border-radius: inherit;
+}
+
+.link--secondary:hover .link--secondary__state-layer {
+  background-color: var(--secondary-container-color);
 }
