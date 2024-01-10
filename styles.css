@@ -128,3 +128,32 @@ body {
 .list-inline-item {
   display: inline;
 }
+
+/* Nav */
+
+.navbar {
+  background-color: var(--primary-container-color);
+  color: var(--on-primary-container-color);
+  padding: 0.5rem 2rem;
+}
+
+.navbar__list {
+  text-align: right;
+}
+
+.navbar__list__item {
+  margin: 2rem;
+}
+
+.navbar__list__item__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar__list__item__link:hover {
+  text-decoration: underline;
+}
+
+.navlink-active {
+  text-decoration: underline;
+}
