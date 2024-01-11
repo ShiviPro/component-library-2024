@@ -134,15 +134,23 @@ body {
 .navbar {
   background-color: var(--primary-container-color);
   color: var(--on-primary-container-color);
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
+}
+
+.navbar__heading {
+  margin: 0;
+  position: absolute;
+  left: 2rem;
 }
 
 .navbar__list {
+  margin: 0;
+  margin-top: 0.5rem;
   text-align: right;
 }
 
 .navbar__list__item {
-  margin: 2rem;
+  margin: 0 1.5rem;
 }
 
 .navbar__list__item__link {
