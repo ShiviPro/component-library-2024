@@ -183,3 +183,19 @@ body {
 .header__text {
   margin-block-start: 1rem;
 }
+
+/* Sections */
+
+.section {
+  padding: 2rem 0;
+}
+
+.section__heading {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section--off-white {
+  background-color: var(--surface-container-color);
+}
