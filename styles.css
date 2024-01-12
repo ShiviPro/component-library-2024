@@ -199,3 +199,32 @@ body {
 .section--off-white {
   background-color: var(--surface-container-color);
 }
+
+/* Footer */
+
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: var(--primary-container-color);
+  color: var(--on-primary-container-color);
+  border-top-right-radius: 1rem;
+}
+
+.footer__list {
+  padding-inline-start: 0;
+}
+
+.footer__list-item__link {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+.footer__list-item__link__state-layer {
+  padding: 0.5rem 1rem;
+  border-radius: inherit;
+}
+
+.footer__list-item__link__state-layer:hover {
+  background-color: rgba(49, 106, 65, 0.08);
+}
