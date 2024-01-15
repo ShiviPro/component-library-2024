@@ -167,6 +167,33 @@ body {
   text-decoration: underline;
 }
 
+/* Responsive Navbar */
+
+@media(max-width: 730px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar__heading {
+    position: static;
+  }
+
+  .navbar__list {
+    text-align: center;
+  }
+
+  @media(max-width: 530px) {
+    .navbar__list {
+      padding-inline-start: 0;
+      list-style-type: none;
+    }
+
+    .navbar__list__item {
+      display: list-item;
+    }
+  }
+}
+
 /* Header */
 
 .header {
