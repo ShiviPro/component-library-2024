@@ -205,12 +205,13 @@ body {
   display: block;
   width: 50%;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .header__text {
   margin-block-start: 1rem;
 }
-
+/* TODO: update SVG style for fine-tuned responsiveness */
 /* Sections */
 
 .section {

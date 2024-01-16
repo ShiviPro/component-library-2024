@@ -112,11 +112,18 @@
 
     <!-- Header -->
     <header class="header">
-      <img
-        class="header__image"
-        src="/images/version-control-illustration.svg"
-        alt="Illustration of a Developer"
-      />
+      <picture>
+        <source
+          media="(max-width: 600px)"
+          srcset="/images/version-control-illustration-focussed.svg"
+          type="image/svg+xml"
+        />
+        <img
+          class="header__image"
+          src="/images/version-control-illustration.svg"
+          alt="Illustration of a Developer"
+        />
+      </picture>
       <h1 class="header__text display-text">
         Shivam Tewari, the web developer
       </h1>
