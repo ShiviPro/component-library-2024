@@ -203,15 +203,22 @@ body {
 
 .header__image {
   display: block;
-  width: 50%;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .header__text {
   margin-block-start: 1rem;
 }
-/* TODO: update SVG style for fine-tuned responsiveness */
+
+/* Responsive Header */
+
+@media(max-width: 1400px) {
+  .header__image {
+    max-width: 75%;
+  }
+}
+
 /* Sections */
 
 .section {
