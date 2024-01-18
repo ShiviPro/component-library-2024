@@ -254,6 +254,7 @@ body {
 
 .section--off-white {
   background-color: var(--surface-container-color);
+  border-radius: 2rem 0 2rem 0;
 }
 
 /* Footer */
