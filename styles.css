@@ -264,7 +264,7 @@ body {
   text-align: center;
   background-color: var(--primary-container-color);
   color: var(--on-primary-container-color);
-  border-top-right-radius: 1rem;
+  border-top-right-radius: 2rem;
 }
 
 .footer__list {
