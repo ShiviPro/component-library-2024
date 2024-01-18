@@ -112,13 +112,23 @@
 
     <!-- Header -->
     <header class="header">
-      <img
-        class="header__image"
-        src="/images/version-control-illustration.svg"
-        alt="Illustration of a Developer"
-      />
+      <picture>
+        <source
+          media="(max-width: 600px)"
+          srcset="/images/version-control-illustration-focussed.svg"
+          type="image/svg+xml"
+        />
+        <img
+          class="header__image"
+          src="/images/version-control-illustration.svg"
+          alt="Illustration of a Developer"
+        />
+      </picture>
       <h1 class="header__text display-text">
-        Shivam Tewari, the web developer
+        Shivam&nbsp;Tewari,
+        <span class="header__text__additional-info"
+          >the web&nbsp;developer</span
+        >
       </h1>
     </header>
 
@@ -156,29 +166,29 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="headline-small">Connect to me on :</div>
+      <div class="headline-small footer__heading">Connect to me on :</div>
       <ul class="footer__list">
-        <li class="list-inline-item">
+        <li class="list-inline-item footer__list__item">
           <a
-            class="footer__list-item__link link label-large"
+            class="footer__list__item__link link label-large"
             href="https://github.com/ShiviPro"
-            ><div class="footer__list-item__link__state-layer">GitHub</div></a
+            ><div class="footer__list__item__link__state-layer">GitHub</div></a
           >
         </li>
-        <li class="list-inline-item">
+        <li class="list-inline-item footer__list__item">
           <a
-            class="footer__list-item__link link label-large"
+            class="footer__list__item__link link label-large"
             href="https://twitter.com/ShiviPro"
-            ><div class="footer__list-item__link__state-layer">
+            ><div class="footer__list__item__link__state-layer">
               X(Twitter)
             </div></a
           >
         </li>
-        <li class="list-inline-item">
+        <li class="list-inline-item footer__list__item">
           <a
-            class="footer__list-item__link link label-large"
+            class="footer__list__item__link link label-large"
             href="https://www.linkedin.com/in/shivam-tewari-9286b1171/"
-            ><div class="footer__list-item__link__state-layer">LinkedIn</div></a
+            ><div class="footer__list__item__link__state-layer">LinkedIn</div></a
           >
         </li>
       </ul>

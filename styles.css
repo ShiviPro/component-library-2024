@@ -33,52 +33,64 @@ body {
 .display-text {
   font-family: "Satisfy", cursive;
   font-weight: 400;
-  font-size: 57pt;
-  line-height: 64pt;
-  letter-spacing: -0.25pt;
+  font-size: calc(2.31rem + 1.5vw);
+  line-height: 5.33rem;
+  letter-spacing: -0.02rem;
 }
 
 .headline-large {
   font-family: "Satisfy", cursive;
   font-weight: 400;
-  font-size: 32pt;
-  line-height: 40pt;
+  font-size: calc(1.88rem + 0.5vw);
+  line-height: 3.33rem;
   letter-spacing: 0;
 }
 
 .headline-small {
   font-family: "Satisfy", cursive;
   font-weight: 400;
-  font-size: 24pt;
-  line-height: 32pt;
+  font-size: calc(1.5rem + 0.32vw);
+  line-height: 2.67rem;
   letter-spacing: 0;
 }
 
 .body-text {
   font-weight: 400;
-  font-size: 12pt;
-  line-height: 16pt;
-  letter-spacing: 0.4pt;
+  font-size: calc(0.75rem + 0.16vw);
+  line-height: 1.33rem;
+  letter-spacing: 0.03rem;
 }
 
 .label-large {
   font-weight: 500;
-  font-size: 14pt;
-  line-height: 20pt;
-  letter-spacing: 0.1pt;
+  font-size: calc(1rem + 0.12vw);
+  line-height: 1.67rem;
+  letter-spacing: 0.01rem;
 }
 
 .label-small {
   font-weight: 500;
-  font-size: 11pt;
-  line-height: 16pt;
-  letter-spacing: 0.5pt;
+  font-size: calc(0.63rem + 0.2vw);
+  line-height: 1.33rem;
+  letter-spacing: 0.04rem;
+}
+
+/* Finer Responsive Typography */
+
+@media(max-width: 293px) {
+  .body-text {
+    letter-spacing: 0.05rem;
+  }
+
+  .label-small {
+    letter-spacing: 0.06rem;
+  }
 }
 
 /* Containers */
 
 .container-center {
-  max-width: 450px;
+  max-width: 28.13rem;
   margin: 0 auto;
 }
 
@@ -87,8 +99,8 @@ body {
 .link {
   text-decoration: none;
   display: inline-block;
-  margin: 20px;
-  border-radius: 25px;
+  margin: 1.25rem;
+  border-radius: 1.5rem;
 }
 
 .link--primary {
@@ -97,7 +109,7 @@ body {
 }
 
 .link--primary__state-layer {
-  padding: 10px 20px;
+  padding: 0.63rem 1.25rem;
   border-radius: inherit;
 }
 
@@ -111,7 +123,7 @@ body {
 }
 
 .link--secondary__state-layer {
-  padding: 9px 18px;
+  padding: 0.56rem 1.13rem;
   border-radius: inherit;
 }
 
@@ -167,6 +179,33 @@ body {
   text-decoration: underline;
 }
 
+/* Responsive Navbar */
+
+@media(max-width: 730px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar__heading {
+    position: static;
+  }
+
+  .navbar__list {
+    text-align: center;
+  }
+
+  @media(max-width: 530px) {
+    .navbar__list {
+      padding-inline-start: 0;
+      list-style-type: none;
+    }
+
+    .navbar__list__item {
+      display: list-item;
+    }
+  }
+}
+
 /* Header */
 
 .header {
@@ -176,13 +215,30 @@ body {
 
 .header__image {
   display: block;
-  width: 50%;
   margin: 0 auto;
+  max-width: 50%;
 }
 
 .header__text {
   margin-block-start: 1rem;
+  padding: 0 2rem;
 }
+
+/* Responsive Header */
+
+@media(max-width: 1400px) {
+  .header__image {
+    max-width: 75%;
+  }
+}
+
+@media(max-width: 1022px) {
+  .header__text__additional-info {
+    display: block;
+  }
+}
+/* Reduce padding at 405px to prevent overflow */
+/* May add media queries when addressing mobile widths below 300px; This is because after a certain threshold, text looks too small for their respective viewports. */
 
 /* Sections */
 
@@ -214,17 +270,33 @@ body {
   padding-inline-start: 0;
 }
 
-.footer__list-item__link {
+.footer__list__item__link {
   margin-top: 0;
   margin-bottom: 0;
   color: inherit;
 }
 
-.footer__list-item__link__state-layer {
+.footer__list__item__link__state-layer {
   padding: 0.5rem 1rem;
   border-radius: inherit;
 }
 
-.footer__list-item__link__state-layer:hover {
+.footer__list__item__link__state-layer:hover {
   background-color: rgba(49, 106, 65, 0.08);
+}
+
+/* Responsive Footer */
+
+@media(max-width: 423px) {
+  .footer{
+    text-align: left;
+  }
+
+  .footer__heading {
+    margin-left: 2.25rem;
+  }
+
+  .footer__list__item {
+    display: list-item;
+  }
 }
