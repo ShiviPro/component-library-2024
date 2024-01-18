@@ -75,6 +75,18 @@ body {
   letter-spacing: 0.04rem;
 }
 
+/* Finer Responsive Typography */
+
+@media(max-width: 293px) {
+  .body-text {
+    letter-spacing: 0.05rem;
+  }
+
+  .label-small {
+    letter-spacing: 0.06rem;
+  }
+}
+
 /* Containers */
 
 .container-center {
