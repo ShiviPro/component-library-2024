@@ -270,17 +270,33 @@ body {
   padding-inline-start: 0;
 }
 
-.footer__list-item__link {
+.footer__list__item__link {
   margin-top: 0;
   margin-bottom: 0;
   color: inherit;
 }
 
-.footer__list-item__link__state-layer {
+.footer__list__item__link__state-layer {
   padding: 0.5rem 1rem;
   border-radius: inherit;
 }
 
-.footer__list-item__link__state-layer:hover {
+.footer__list__item__link__state-layer:hover {
   background-color: rgba(49, 106, 65, 0.08);
+}
+
+/* Responsive Footer */
+
+@media(max-width: 423px) {
+  .footer{
+    text-align: left;
+  }
+
+  .footer__heading {
+    margin-left: 2.25rem;
+  }
+
+  .footer__list__item {
+    display: list-item;
+  }
 }
