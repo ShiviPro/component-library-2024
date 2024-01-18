@@ -147,7 +147,7 @@ body {
   background-color: var(--primary-container-color);
   color: var(--on-primary-container-color);
   padding: 1rem 2rem;
-  border-radius: 1rem 1rem 0 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .navbar__heading {
