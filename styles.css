@@ -216,7 +216,7 @@ body {
 .header__image {
   display: block;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: calc(45vw + 8rem);
 }
 
 .header__text {
@@ -225,12 +225,6 @@ body {
 }
 
 /* Responsive Header */
-
-@media(max-width: 1400px) {
-  .header__image {
-    max-width: 75%;
-  }
-}
 
 @media(max-width: 1022px) {
   .header__text__additional-info {
