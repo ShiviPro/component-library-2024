@@ -90,7 +90,7 @@ body {
 /* Containers */
 
 .container-center {
-  max-width: 28.13rem;
+  max-width: calc(55vw + 7.8rem);
   margin: 0 auto;
 }
 
