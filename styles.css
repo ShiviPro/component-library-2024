@@ -255,6 +255,22 @@ body {
   border-radius: 2rem 0 2rem 0;
 }
 
+/* Responsive Section */
+
+@media(max-width: 550px) {
+  .section {
+    padding: 1rem;
+  }
+
+  .section__heading {
+    margin-bottom: 0;
+  }
+
+  .section--off-white {
+    border-radius: 0;
+  }
+}
+
 /* Footer */
 
 .footer {
